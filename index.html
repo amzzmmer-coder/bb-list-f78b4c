@@ -73,12 +73,26 @@ details.panel[open]>summary::after{content:" ▴"}
 .cmp-h{font-weight:700;margin-bottom:4px}
 .cmp-g{margin:2px 0;line-height:1.45}.cmp-g b{display:inline-block;min-width:4.5em;color:#9a6b00}
 .old{font-size:13px;padding:8px 0;border-top:1px solid var(--line)}.old small{color:var(--muted);display:block;margin-top:2px}
-.foot{position:fixed;left:0;right:0;bottom:0;background:rgba(245,241,235,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));font-size:12px;color:var(--muted);text-align:center}</style>
+.foot{position:fixed;left:0;right:0;bottom:0;background:rgba(245,241,235,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));font-size:12px;color:var(--muted);text-align:center}.bill{background:#fff;border:1px solid #e7e2da;border-radius:12px;padding:10px 12px;margin:10px 0}
+.bill h2{font-size:15px;margin:0 0 6px}.bg{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;text-align:center}
+.bg b{display:block;font-size:16px;color:#166534}.bg div:nth-child(4) b{color:#c2410c}.bg i{font-style:normal;font-size:11px;color:#78716c}
+.bar{height:8px;background:#eee;border-radius:4px;margin:8px 0 2px;overflow:hidden}.bar span{display:block;height:100%;background:#16a34a}
+.bn{font-size:11px;color:#78716c;margin:2px 0}.bill summary{font-size:13px;font-weight:600;padding:5px 0;cursor:pointer}
+.rl{margin:0;padding-left:0;list-style:none;font-size:12px}.rl li{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px dashed #eee}
+.bt{width:100%;border-collapse:collapse;font-size:12px}.bt th,.bt td{padding:4px 3px;border-bottom:1px solid #f0ebe4;text-align:left}.bt td:nth-child(n+3){white-space:nowrap;text-align:right}
+.bt small,.rl small{color:#a8a29e;font-size:10px}.st{font-size:11px;padding:1px 5px;border-radius:6px;background:#ecfdf5;color:#166534;white-space:nowrap}.st-已退{background:#f5f5f4;color:#78716c}.st-未下单{background:#fff7ed;color:#c2410c}
+</style>
 </head><body><div class="wrap">
 <div class="hdr"><h1>BB计划 · 淘宝双11</h1><span class="ver">v3.1</span></div>
 <p class="tip" style="color:#9a3412;font-weight:600">标准：宝宝用品只选大牌官方店、销量高口碑好；10-20 按此标准换掉13项小牌子</p>
 <p class="sub">2026-10-20 · 67 件 · 全部淘宝/天猫</p>
 
+<section class="bill" id="bill"><h2>账单</h2>
+<div class="bg"><div><b>¥190</b><i>已花</i></div><div><b>¥200</b><i>已退</i></div><div><b>¥16313.84</b><i>预计</i></div><div><b>¥16123.84</b><i>待付</i></div></div>
+<div class="bar"><span style="width:1.2%"></span></div><p class="bn">已花/预计 1.2%；4件待定价未计入</p>
+<details><summary>已退 2笔 · ¥200</summary><ul class="rl"><li><span>嫚熙月子服×3 <small>3316537454004032289</small></span><span>¥150 已退</span></li><li><span>艾瑟尿布台 <small>3316537454004050653</small></span><span>¥50 已退</span></li></ul></details>
+<details><summary>订单明细 9</summary><table class="bt"><tr><th>商品/订单</th><th>状态</th><th>已付</th><th>剩余</th></tr><tr><td>嫚熙内裤<br><small>3316537454004005461</small></td><td><span class="st st-定金已付">定金已付</span></td><td>¥30</td><td>¥134.9</td></tr><tr><td>嫚熙月子服×1<br><small>3316526115005096662</small></td><td><span class="st st-定金已付">定金已付</span></td><td>¥50</td><td>待定</td></tr><tr><td>babycare洗衣液<br><small>3316537454004041471</small></td><td><span class="st st-定金已付">定金已付</span></td><td>¥30</td><td>¥159.5</td></tr><tr><td>艾瑟Pro尿布台<br><small>3316968589004005461</small></td><td><span class="st st-定金已付">定金已付</span></td><td>¥50</td><td>¥287</td></tr><tr><td>全棉时代棉柔巾<br><small>3316537454004078298</small></td><td><span class="st st-定金已付">定金已付</span></td><td>¥10</td><td>待定</td></tr><tr><td>可心柔云柔巾<br><small>3316537454004087480</small></td><td><span class="st st-定金已付">定金已付</span></td><td>¥20</td><td>¥149.5</td></tr><tr><td>嫚熙月子服×3<br><small>3316537454004032289</small></td><td><span class="st st-已退">已退</span></td><td>¥0</td><td>¥0</td></tr><tr><td>艾瑟尿布台<br><small>3316537454004050653</small></td><td><span class="st st-已退">已退</span></td><td>¥0</td><td>¥0</td></tr><tr><td>可优比弗森成长床 +<br><small>—</small></td><td><span class="st st-未下单">未下单</span></td><td>¥0</td><td>¥2499</td></tr></table></details>
+<p class="bn">更新 10-20 17:20（北京时间）· 改 ledger.json 后重建</p></section>
 <div class="metrics">
   <div class="m ok"><div class="k">已付定金</div><div class="v">¥190<em>6笔</em></div></div>
   <div class="m"><div class="k">尾款开始</div><div class="v">今晚 20:00</div></div>
